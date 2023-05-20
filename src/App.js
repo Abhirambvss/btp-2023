@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// import ProtectedRoute from './components/protectedRoute'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Graph from "./components/graph";
+import InsertTextFile from "./components/insertTextFile";
+import TestCases from "./components/generateTestCases";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<InsertTextFile />} />
+          <Route path="/graph" element={<Graph />} />
+          <Route path="/testcases" element={<TestCases />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
