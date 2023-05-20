@@ -1,3 +1,11 @@
+## This project is made as a part of BTP - 2023 under the guidance of Prof. Jayprakash Lalchandani.
+
+Project Title : Requirements Specification based Test cases generation.
+
+The project was made using HTML, Tailwind CSS, Javascript, React JS.
+
+The below instructions show how to run this application.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
